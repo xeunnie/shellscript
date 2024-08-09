@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3333/dopamines
+    username: seungeun
+    password: 1234
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+#    hibernate:
+#      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+
+server:
+  port: 8081
